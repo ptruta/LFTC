@@ -1,0 +1,16 @@
+BEGIN
+    INT a = 5;
+    INT b = a + 5;
+    STRING c;
+    READ(c);
+    a = 7;
+    WRITE(a);
+    WRITE(b);
+    WRITE(c);
+    WHILE (i<10){
+	IF (a>i) {
+	   WRITE(a);
+	} ELSE {
+	   WRITE(b);
+    };
+END

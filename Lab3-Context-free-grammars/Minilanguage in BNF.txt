@@ -1,0 +1,68 @@
+  <program> ::= “begin” <cmpdstmt> “end”
+
+  <cmpdstmt> ::= <line> <cmpdstmt> | <cmpdstmt>
+
+  <line> ::= <decllist> | <stmt>
+
+  <decllist> ::= <decl> | <decl> “;” <decllist> 
+
+  <decl> ::= <type> <identifier> | <type> <identifier> “=” <expression>
+
+  <type> ::=  “int” | “bool” | “float” | “char” | “string”
+
+  <arraydecl> ::= <type> <identifier> “[“ no “]”
+
+  <no> ::= <digit> "{" no "}"
+
+  <stmtlist> ::= <stmt> “;” <stmtlist> | <stmt>
+
+  <stmt> ::= <simplstmt> | <structstmt>
+
+  <simplstmt> ::= <assignstmt> | <iostmt>
+
+  <assignstmt> ::= <identifier> “ = ” <expression>
+
+  <expression> ::= <term>
+  	   	   | <expression> <operation> <expression>
+  		   | “(” <expression> <operation> <expression> “)”
+                   | “!” <expression>
+  
+  <operation> ::= “ + ” | “ - ” | “ * ” | “ / ” | “ % ” | “ ^ ” 
+
+  <term> ::= <identifier> | <no>  
+
+  <iostmt> ::= “READ” ‘(“ <identifierlist> “)” | “WRITE” “(” <expression> “)”
+ 
+  <identifierlist> ::= <identifier> | <identifier> “,” <identifierlist> 
+  
+  <structstmt> ::= <ifstmt> | <whilestmt> | <forstmt> | <cmpdstmt>
+
+  <ifstmt> ::= “if” <condition> <cmpstmt>
+  	      | “if” <condition> <cmpstmt> “else” <cmpstmt>
+
+  <condition> ::= “(“ <expression> <relation> <expression> “)”
+  
+  <whilestmt> ::= “while” <condition> <compstmt>
+  
+  <forstmt> ::= “for” “(“ <assignment> “;” <condition> “;” <assignstmt> “)” <cmpstmt>  
+  
+  <identifier> ::= <letter> | <letter> <identifierchars>
+  
+  <identifierchars> ::= <identifierchar>
+  		        | <identifierchar> <identifierchars>
+  
+  <identifierchar> ::= <letter>
+  		       | <digit>
+  		       | “_”
+  
+  <letter> ::= “a” | “b” | … | “z” | "A" | "B" |...| "Z"
+  
+  <digit> ::= "0" | "1" |...| "9"
+  
+  <reation> ::= “-” | “<” | “>” | “<=” | “>=” | “==” | “&&” | “||” | “!” | “!=”
+  
+  <string> ::= <char>
+               | <char> <string>
+  
+  <char> ::= <letter>
+  	    | <digit>

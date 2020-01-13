@@ -1,0 +1,7 @@
+N = { S, A, X }
+E = { a, b }
+S = S
+P = {
+	S -> aX,
+	X -> a | bX
+}

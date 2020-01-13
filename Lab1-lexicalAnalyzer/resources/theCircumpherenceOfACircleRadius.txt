@@ -1,0 +1,14 @@
+begin
+begi
+asuduhiuhhuy
+dfdjkj
+
+float c,r,a;
+float pi = -3.14;
+read (r);
+pati = 2 - 5;
+c = 2 * pi * r;
+a = pi * r * r;
+write (c);
+write (a);
+end

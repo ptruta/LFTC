@@ -1,0 +1,2 @@
+• Add personal fonts in here.
+Compatible: .fon, .fnt, .ttf, .ttc, .fot, .otf, .mmm, .pfb, .pfm.

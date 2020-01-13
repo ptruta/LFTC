@@ -1,0 +1,8 @@
+The Identifier Symbol Table:
+(97, ['a'])
+(99, ['c'])
+(102, ['begi'])
+(104, ['dfdjkj'])
+(108, ['pati'])
+(109, ['pi'])
+(114, ['r'])

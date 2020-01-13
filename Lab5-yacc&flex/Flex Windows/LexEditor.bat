@@ -1,0 +1,2 @@
+cd EditPlusPortable
+EditPlusPortable.exe

@@ -1,0 +1,14 @@
+AdditionalParameters=
+	Switches : N/A
+	Action   : accepts command-line parameters.
+	Default  : 
+
+RunLocally=
+	Switches : true, false
+	Action   : supports running application from read-only medium.
+	Default  : false
+
+RunX86Mode=
+	Switches : true, false
+	Action   : force 32-bit compatibility mode under 64-bit OSes.
+	Default  : false
